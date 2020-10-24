@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "awsamplifytextshare473ec7e2": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

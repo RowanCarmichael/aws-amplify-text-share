@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 const App = () => {
   const [text, setText] = useState('')
@@ -16,8 +17,9 @@ const App = () => {
     <div className="App">
       <textarea value={text} onChange={handleTextChange} />
       <button type="button" onClick={copyToClipcoard}>Copy</button>
+      <AmplifySignOut />
     </div>
   )
 }
 
-export default App;
+export default withAuthenticator(App);

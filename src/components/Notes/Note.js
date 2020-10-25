@@ -36,7 +36,7 @@ const Note = ({ id, description, deleteNote }) => {
 };
 
 export const NotePropType = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   description: PropTypes.string.isRequired,
 };
 

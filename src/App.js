@@ -10,7 +10,7 @@ import Notes from "./components/Notes";
 import * as styles from "./styles";
 import Input from "./components/Input";
 
-const initialFormState = { name: "", description: "" };
+const initialFormState = { description: "" };
 
 const App = () => {
   const [notes, setNotes] = useState([]);
